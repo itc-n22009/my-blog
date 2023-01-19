@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.body {
+  background-color: #DDD;
+}
+
+.paper {
+  background-color: #FFF;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+}
+
+.paper > p {
+  color: #333;
+  font-family: "Arial Black";
+  font-size: 30px;
+  line-height: 200px;
+  margin: 0;
+  text-align: center;
+}
+
+.paper:before,
+.paper:after {
+  background-color: #666;
+  box-shadow: 0 3px 10px #666;
+  content: "";
+  height: 100px;
+  left: 90px;
+  position: absolute;
+  top: 95px;
+  transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  width: 305px;
+  z-index: -1;
+}
+
+.paper:after {
+  left: 5px;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+}
+
